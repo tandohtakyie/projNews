@@ -9,6 +9,18 @@ lifecycleRuntimeKtx = "2.6.1"
 activityCompose = "1.8.0"
 composeBom = "2024.04.01"
 
+splashScreen = "1.0.1"
+navigationCompose = "2.8.3"
+hiltAndroid = "2.49"
+hiltNavigationCompose = "1.2.0"
+retrofit = "2.11.0"
+coil = "2.4.0"
+datastore = "1.1.1"
+foundation = "1.7.5"
+accompanist = "0.31.4-beta"
+paging-runtime = "3.3.2"
+paging = "3.3.2"
+room = "2.6.1"
 
 
 [libraries]
@@ -19,7 +31,34 @@ androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-co
 androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
 androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
 androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
-#androidx-compose-splashscreen = {group = "androidx.core:core-splashscreen", version.ref = "splashScreen"}
+
+androidx-compose-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "splashScreen" }
+androidx-compose-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
+androidx-dagger-hilt = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroid" }
+androidx-google-dagger = { module = "com.google.dagger:hilt-compiler", version.ref = "hiltAndroid" }
+androidx-hilt = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
+
+retrofit2 = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+retrofit2-converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+
+coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coil" }
+
+androidx-datastore = { module = "androidx.datastore:datastore-preferences", version.ref = "datastore" }
+
+androidx-compose-foundation = { module = "androidx.compose.foundation:foundation", version.ref = "foundation" }
+
+accompanist-systemuicontroller = { module = "com.google.accompanist:accompanist-systemuicontroller", version.ref = "accompanist" }
+
+
+androidx-compose-paging-runtime = { module = "androidx.paging:paging-runtime", version.ref = "paging-runtime" }
+androidx-compose-paging = { module = "androidx.paging:paging-compose", version.ref = "paging" }
+
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
+androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
+androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
+
+
+
 androidx-ui = { group = "androidx.compose.ui", name = "ui" }
 androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
 androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }

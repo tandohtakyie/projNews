@@ -49,6 +49,31 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+
+    implementation(libs.androidx.compose.splashscreen)
+    implementation(libs.androidx.compose.navigation.compose)
+    implementation(libs.androidx.dagger.hilt)
+    implementation(libs.androidx.google.dagger)
+    implementation(libs.androidx.hilt)
+
+    implementation(libs.retrofit2)
+    implementation(libs.retrofit2.converter.gson)
+
+    implementation(libs.coil.compose)
+
+    implementation(libs.androidx.datastore)
+
+    implementation(libs.androidx.compose.foundation)
+
+    implementation(libs.accompanist.systemuicontroller)
+
+    implementation(libs.androidx.compose.paging)
+    implementation(libs.androidx.compose.paging.runtime)
+
+    implementation(libs.androidx.room.runtime)
+    implementation(libs.androidx.room.compiler)
+    implementation(libs.androidx.room.ktx)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
