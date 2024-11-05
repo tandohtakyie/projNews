@@ -9,6 +9,8 @@ lifecycleRuntimeKtx = "2.6.1"
 activityCompose = "1.8.0"
 composeBom = "2024.04.01"
 
+devtoolsKsp = "2.0.20-1.0.24"
+
 splashScreen = "1.0.1"
 navigationCompose = "2.8.3"
 hiltAndroid = "2.49"
@@ -35,7 +37,7 @@ androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", versi
 androidx-compose-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "splashScreen" }
 androidx-compose-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
 androidx-dagger-hilt = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroid" }
-androidx-google-dagger = { module = "com.google.dagger:hilt-compiler", version.ref = "hiltAndroid" }
+androidx-google-dagger-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hiltAndroid" }
 androidx-hilt = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
 
 retrofit2 = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
@@ -71,4 +73,6 @@ androidx-material3 = { group = "androidx.compose.material3", name = "material3" 
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+devtools-ksp = { id = "com.google.devtools.ksp", version.ref = "devtoolsKsp" }
+hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "hiltAndroid" }
 

@@ -1,7 +1,11 @@
+import org.jetbrains.kotlin.gradle.dsl.kotlinExtension
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.devtools.ksp)
+    alias(libs.plugins.hilt.android)
 }
 
 android {
@@ -37,6 +41,12 @@ android {
     buildFeatures {
         compose = true
     }
+
+    packaging {
+        resources {
+            excludes += "META-INF/gradle/incremental.annotation.processors"
+        }
+    }
 }
 
 dependencies {
@@ -53,7 +63,7 @@ dependencies {
     implementation(libs.androidx.compose.splashscreen)
     implementation(libs.androidx.compose.navigation.compose)
     implementation(libs.androidx.dagger.hilt)
-    implementation(libs.androidx.google.dagger)
+    ksp(libs.androidx.google.dagger.compiler)
     implementation(libs.androidx.hilt)
 
     implementation(libs.retrofit2)
@@ -71,7 +81,7 @@ dependencies {
     implementation(libs.androidx.compose.paging.runtime)
 
     implementation(libs.androidx.room.runtime)
-    implementation(libs.androidx.room.compiler)
+    ksp(libs.androidx.room.compiler)
     implementation(libs.androidx.room.ktx)
 
     testImplementation(libs.junit)
