@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ProjectNews</string>
+    <string name="next_text">Next</string>
+    <string name="get_started_text">Get Started</string>
 </resources>
