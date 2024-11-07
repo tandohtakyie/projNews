@@ -23,6 +23,7 @@ import kotlinx.coroutines.launch
 fun OnBoardingScreen(
     modifier: Modifier,
     scope: CoroutineScope,
+    event: (OnboardingEvent) -> Unit,
 ) {
 
     val pagerState = rememberPagerState { onboardingItems.size }
@@ -65,6 +66,7 @@ fun OnBoardingScreen(
                             }
                         } else {
                             // navigate to home screen
+                            event(OnboardingEvent.SaveAppEntry)
                         }
                     },
                 )
