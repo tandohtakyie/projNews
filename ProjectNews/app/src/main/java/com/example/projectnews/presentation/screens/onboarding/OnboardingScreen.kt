@@ -1,4 +1,4 @@
-package com.example.projectnews.presentation.onboarding
+package com.example.projectnews.presentation.screens.onboarding
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -13,7 +13,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import coil.compose.AsyncImage
 import com.example.projectnews.presentation.components.NewsButton
-import com.example.projectnews.presentation.onboarding.components.Indicator
+import com.example.projectnews.presentation.screens.onboarding.components.Indicator
 import com.example.projectnews.util.Dimens.PADDING200
 import com.example.projectnews.util.Dimens.PADDING50
 import kotlinx.coroutines.CoroutineScope

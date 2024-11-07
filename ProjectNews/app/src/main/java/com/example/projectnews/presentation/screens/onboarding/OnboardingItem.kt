@@ -1,4 +1,4 @@
-package com.example.projectnews.presentation.onboarding
+package com.example.projectnews.presentation.screens.onboarding
 
 data class OnboardingItem(
     val title: String,
