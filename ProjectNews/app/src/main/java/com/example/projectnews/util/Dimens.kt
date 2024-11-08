@@ -11,4 +11,6 @@ object Dimens {
     val PADDING10 = 10.dp
     val PADDING5 = 5.dp
     val PADDING200 = 200.dp
+
+    val ARTICLE_CARD_SIZE = 96.dp
 }

@@ -8,7 +8,9 @@ import androidx.activity.viewModels
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.runtime.SideEffect
 import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.example.projectnews.presentation.navgraph.NavGraph
 import com.example.projectnews.ui.theme.ProjectNewsTheme
@@ -31,6 +33,7 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             val scope = rememberCoroutineScope()
+            val context = LocalContext.current
 
             ProjectNewsTheme {
 
@@ -45,8 +48,10 @@ class MainActivity : ComponentActivity() {
                 }
 
                 NavGraph(
+                    modifier = Modifier,
+                    context = context,
                     startDestination = viewModel.startDestination,
-                    scope = scope
+                    scope = scope,
                 )
             }
         }

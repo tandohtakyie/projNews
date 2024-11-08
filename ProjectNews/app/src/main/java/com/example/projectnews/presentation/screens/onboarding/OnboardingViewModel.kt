@@ -2,7 +2,7 @@ package com.example.projectnews.presentation.screens.onboarding
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.projectnews.domain.usecase.AppEntryUseCases
+import com.example.projectnews.domain.usecase.app_entry.AppEntryUseCases
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
